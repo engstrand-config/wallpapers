@@ -5,7 +5,7 @@
 ;; Find the absolute path to this file.
 (define %wallpapers-root-dir
   (find (lambda (path)
-          (file-exists? (string-append path "/engstrand/" current-filename)))
+          (file-exists? (string-append path "/engstrand/wallpapers.scm")))
         %load-path))
 
 (define-public (get-wallpaper-path wallpaper)
